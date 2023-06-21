@@ -26,7 +26,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
-  height: 100vh;
+  height: 100%;
   transition: all 0.4s;
 }
 
@@ -109,12 +109,23 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 24px;
+
+}
+
+.list-group-item {
+  padding: 0;
   background: var(--surface-color);
-  border: 1.5px solid var(--stroke-color);
+  border: 0;
   border-radius: 8px;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+}
+
+.list-group-item a {
+  padding: 10px 18px;
+  background: var(--surface-color);
+  border: 1.5px solid var(--stroke-color);
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
   transition: background 0.2s;
@@ -142,6 +153,18 @@ ul li a:hover {
 
 .social-links a:hover {
   background: var(--highlight-color);
+}
+
+/* #staticBackdropLabel {
+  color: var(--text-color);
+  color: springgreen;
+} */
+
+th, td {
+  text-align: center;
+}
+tbody tr td ul .list-group-item {
+  background: none;
 }
 
 footer {

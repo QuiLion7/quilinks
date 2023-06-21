@@ -30,3 +30,10 @@ const saveLocalStorage = isLight => isLight ? setItemLocalStorage('light') : set
 switchTheme.addEventListener('click', changeTheme)
 
 window.addEventListener('load', checkThemeLocalStorage)
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})

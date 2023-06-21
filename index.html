@@ -9,7 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <title>QuiLinks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css"/>
+    <script src="./script.js" defer></script>
   </head>
   <body class="dark">
     <section class="container">
@@ -24,13 +27,14 @@
         <span></span>
       </div>
 
-      <ul>
-        <li><a href="https://drive.google.com/drive/folders/1aujZUvir4F_6l-WbQmuLPkzyBvjmVqgw?usp=sharing" target="_blank">1ª Série 2023 -> 2º Bimestre</a></li>
-        <li><a href="https://drive.google.com/drive/folders/1EJPcriasizqW2PLMtt1RxuSQY-7XRfkc?usp=sharing" target="_blank">2ª Série 2023 -> 2º Bimestre</a></li>
-        <li><a href="https://drive.google.com/drive/folders/1myluDpJJGCrLsmdEeMy6XdgmGRas9o3w?usp=sharing" target="_blank">3ª Série 2023 -> 2º Bimestre</a></li>
-        <li><a href="https://secretwordofchemistry.vercel.app/" target="_blank">Palavra Secreta de Química</a></li>
-        <li><a href="https://quilion7.github.io/simpletodolist/" target="_blank">Lista de Tarefas</a></li>
-        <li><a href="https://github.com/QuiLion7" target="_blank">Ver meu repositório</a></li>
+      <ul class="list-group">
+        <li class="list-group-item"><a href="https://drive.google.com/drive/folders/1aujZUvir4F_6l-WbQmuLPkzyBvjmVqgw?usp=sharing" target="_blank">1ª Série 2023 -> 2º Bimestre</a></li>
+        <li class="list-group-item"><a href="https://drive.google.com/drive/folders/1EJPcriasizqW2PLMtt1RxuSQY-7XRfkc?usp=sharing" target="_blank">2ª Série 2023 -> 2º Bimestre</a></li>
+        <li class="list-group-item"><a href="https://drive.google.com/drive/folders/1myluDpJJGCrLsmdEeMy6XdgmGRas9o3w?usp=sharing" target="_blank">3ª Série 2023 -> 2º Bimestre</a></li>
+        <li class="list-group-item"><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Roteiros de Estudo - 2º Bimestre</a></li>
+        <li class="list-group-item"><a href="https://secretwordofchemistry.vercel.app/" target="_blank">Palavra Secreta de Química</a></li>
+        <li class="list-group-item"><a href="https://quilion7.github.io/simpletodolist/" target="_blank">Lista de Tarefas</a></li>
+        <li class="list-group-item"><a href="https://github.com/QuiLion7" target="_blank">Ver meu repositório</a></li>
       </ul>
 
       <div class="social-links">
@@ -39,7 +43,267 @@
         <a href="https://www.youtube.com/@quilionoliveira5641" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
         <a href="https://www.linkedin.com/in/quilion7/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
         <a href="https://twitter.com/quilindao" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-        
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 text-primary text-center" id="staticBackdropLabel">Roteiros de Estudo - 2º Bimestre</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="accordion" id="classes">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#firstyear" aria-expanded="false" aria-controls="firstyear">
+                      1ª Série
+                    </button>
+                  </h2>
+                  <div id="firstyear" class="accordion-collapse collapse" data-bs-parent="#classes">
+                    <div class="accordion-body">
+                      <div class="table-responsive">
+                        <table class="table table-bordered">
+                          <thead class="thead-light">
+                            <tr>
+                              <th>OBJETO DO CONHECIMENTO</th>
+                              <th>O QUE FOI ESTUDADO</th>
+                              <th>ESTUDE AQUI</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Estrutura Atômica e Composição dos Elementos</td>
+                              <td>
+                                <ul class="list-group list-group-numbered">
+                                  <li class="list-group-item">•	Compreender o papel dos prótons, elétrons e nêutrons na estrutura atômica</li>
+                                  <li class="list-group-item">•	Identificar a relação entre as partículas subatômicas e a identidade de um elemento químico</li>
+                                </ul>
+                              </td>
+                              <td rowspan="7">
+                                <ul class="list-group list-group-numbered">
+                                  <li class="list-group-item">Livro Didático</li>
+                                  <li class="list-group-item">Apostila de Teoria</li>
+                                  <li class="list-group-item">Slide</li>
+                                  <li class="list-group-item">Simulado</li>
+                                  <li class="list-group-item">Exercícios de Aprendizagem</li>
+                                  <li class="list-group-item">Provas Parciais</li>
+                                  <li class="list-group-item">YouTube: Cabral</li>
+                                  <li class="list-group-item">YouTube: Química do Mostro</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Número Atômico e Símbolo do Elemento</td>
+                              <td>
+                                <ul class="list-group list-group-numbered">
+                                  <li class="list-group-item">Conceito de número atômico e símbolo do elemento</li>
+                                  <li class="list-group-item">Entender como determinar o número atômico com base na distribuição eletrônica</li>
+                                  <li class="list-group-item">Relacionar o número atômico com a posição do elemento na tabela periódica</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Relações Atômicas</td>
+                              <td>
+                                <ul class="list-group list-group-numbered">
+                                  <li class="list-group-item">Compreender as diferentes relações entre átomos, como isótopos, isóbaros, isótonos e isoeletrônicos</li>
+                                  <li class="list-group-item">Identificar as características que definem cada tipo de relação atômica</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Configuração Eletrônica</td>
+                              <td>
+                                <ul class="list-group list-group-numbered">
+                                  <li class="list-group-item">Revisar a distribuição eletrônica dos elementos químicos</li>
+                                  <li class="list-group-item">Entender como determinar a configuração eletrônica com base no número atômico</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Distribuição Eletrônica e Tabela Periódica</td>
+                              <td>
+                                <ul class="list-group list-group-numbered">
+                                  <li class="list-group-item">Compreender a relação entre a distribuição eletrônica e a posição dos elementos na tabela periódica</li>
+                                  <li class="list-group-item">Identificar o período e o grupo de um elemento com base em sua distribuição eletrônica</li>
+                                  <li class="list-group-item">Analisar as características dos elementos com base em sua posição na tabela periódica</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Propriedades dos Elementos Químicos</td>
+                              <td>
+                                <ul class="list-group list-group-numbered">
+                                  <li class="list-group-item">Analisar as propriedades dos elementos metálicos, ametais e gases nobres</li>
+                                  <li class="list-group-item">Entender as características que definem cada grupo de elementos</li>
+                                  <li class="list-group-item">Identificar propriedades como condutividade elétrica, condutividade térmica, ponto de fusão e ebulição</li>
+                                  <li class="list-group-item">esolver exercícios relacionados às propriedades dos elementos químicos</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Exercícios Práticos</td>
+                              <td>
+                                <ul class="list-group list-group-numbered">
+                                  <li class="list-group-item">Aplicação dos conceitos aprendidos em exercícios</li>
+                                  <li class="list-group-item">Desenvolvimento de habilidades de resolução de problemas</li>
+                                  <li class="list-group-item">Desafio de habilidades de resolução de problemas mais complexos</li>
+                                  <li class="list-group-item">Aplicação dos cálculos estequiométricos em situações do cotidiano</li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondyear" aria-expanded="true" aria-controls="secondyear">
+                      2ª Série
+                    </button>
+                  </h2>
+                  <div id="secondyear" class="accordion-collapse collapse" data-bs-parent="#classes">
+                    <div class="accordion-body">
+                      <div class="table-responsive">
+                        <table class="table table-bordered">
+                          <thead class="thead-light">
+                            <tr>
+                              <th>OBJETO DO CONHECIMENTO</th>
+                              <th>O QUE FOI ESTUDADO</th>
+                              <th>ESTUDE AQUI</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td >Introdução à Estequiometria</td>
+                              <td>
+                                <ul class="list-group list-group-numbered">
+                                  <li class="list-group-item">Conceitos básicos de estequiometria</li>
+                                  <li class="list-group-item">Leis ponderais (Lei de Lavoisier e Lei de Proust)</li>
+                                </ul>
+                              </td>
+                              <td rowspan="4">
+                                <ul class="list-group list-group-numbered">
+                                  <li class="list-group-item">Livro Didático</li>
+                                  <li class="list-group-item">Apostila de Teoria</li>
+                                  <li class="list-group-item">Slide</li>
+                                  <li class="list-group-item">Simulado</li>
+                                  <li class="list-group-item">Exercícios de Aprendizagem</li>
+                                  <li class="list-group-item">Provas Parciais</li>
+                                  <li class="list-group-item">YouTube: Cabral</li>
+                                  <li class="list-group-item">YouTube: Química do Mostro</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Cálculos Estequiométricos</td>
+                              <td>
+                                <ul class="list-group list-group-numbered">
+                                  <li class="list-group-item">Relações de massa entre reagentes e produtos</li>
+                                  <li class="list-group-item">Uso de equações químicas balanceadas</li>
+                                  <li class="list-group-item">Cálculos de massa em reações químicas</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Determinação da Quantidade de Substâncias</td>
+                              <td>
+                                <ul class="list-group list-group-numbered">
+                                  <li class="list-group-item">Uso de proporções estequiométricas</li>
+                                  <li class="list-group-item">Cálculos de massa de reagentes e produtos</li>
+                                  <li class="list-group-item">Cálculos de quantidade de matéria (Avogadro)</li>
+                                  <li class="list-group-item">Utilização da massa molar para conversões (mol)</li>
+                                  <li class="list-group-item">Utilização do volume molar (CNTP)</li>
+                                  <li class="list-group-item">Conversões entre massa e volume de gases</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Exercícios Práticos</td>
+                              <td>
+                                <ul class="list-group list-group-numbered">
+                                  <li class="list-group-item">Aplicação dos conceitos aprendidos em exercícios</li>
+                                  <li class="list-group-item">Desenvolvimento de habilidades de resolução de problemas</li>
+                                  <li class="list-group-item">Desafio de habilidades de resolução de problemas mais complexos</li>
+                                  <li class="list-group-item">Aplicação dos cálculos estequiométricos em situações do cotidiano</li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thirdyear" aria-expanded="false" aria-controls="thirdyear">
+                      3ª Série
+                    </button>
+                  </h2>
+                  <div id="thirdyear" class="accordion-collapse collapse" data-bs-parent="#classes">
+                    <div class="accordion-body">
+                      <div class="table-responsive">
+                        <table class="table table-bordered">
+                          <thead class="thead-light">
+                            <tr>
+                              <th>OBJETO DO CONHECIMENTO</th>
+                              <th>O QUE FOI ESTUDADO</th>
+                              <th>ESTUDE AQUI</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Funções Oxigenadas: Álcool, Enol, Fenol, Éter, Aldeído, Cetona, Ácido Carboxílico, Éster, Sal Orgânico e Anidrido</td>
+                              <td rowspan="2">
+                                <ul class="list-group list-group-numbered">
+                                  <li class="list-group-item">Compreender a estrutura e propriedades</li>
+                                  <li class="list-group-item">Entender a nomenclatura</li>
+                                  <li class="list-group-item">Identificar a presença do grupo funcional nas moléculas</li>
+                                  <li class="list-group-item">Analisar as diferenças entre as funções</li>
+                                </ul>
+                              </td>
+                              <td rowspan="3">
+                                <ul class="list-group list-group-numbered">
+                                  <li class="list-group-item">Livro Didático</li>
+                                  <li class="list-group-item">Apostila de Teoria</li>
+                                  <li class="list-group-item">Slide</li>
+                                  <li class="list-group-item">Simulado</li>
+                                  <li class="list-group-item">Exercícios de Aprendizagem</li>
+                                  <li class="list-group-item">Provas Parciais</li>
+                                  <li class="list-group-item">YouTube: Cabral</li>
+                                  <li class="list-group-item">YouTube: Química do Mostro</li>
+                                </ul>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Funções Nitrogenadas: Amina, Amida e Nitrocomposto</td>
+                            </tr>
+                            <tr>
+                              <td>Exercícios Práticos</td>
+                              <td>
+                                <ul class="list-group list-group-numbered">
+                                  <li class="list-group-item">Aplicação dos conceitos aprendidos em exercícios</li>
+                                  <li class="list-group-item">Desenvolvimento de habilidades de resolução de problemas</li>
+                                  <li class="list-group-item">Desafio de habilidades de resolução de problemas mais complexos</li>
+                                  <li class="list-group-item">Aplicação dos cálculos estequiométricos em situações do cotidiano</li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <footer>Desenvolvido por <a href="https://github.com/QuiLion7" target="_blank">Quilion Oliveira</a></footer>
@@ -48,6 +312,5 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="./script.js"></script>
   </body>
 </html>
