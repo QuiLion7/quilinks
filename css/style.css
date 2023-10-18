@@ -5,7 +5,7 @@
 }
 
 .dark {
-  --text-color: #FFFFFF;
+  --text-color: #ffffff;
   --bg-url: url(../assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
@@ -149,6 +149,7 @@ ul li a {
 }
 
 .list-group-item {
+  font-size: 1rem;
   padding: 0;
   background: var(--surface-color);
   border: 0;
@@ -191,7 +192,8 @@ ul li a:hover {
   background: var(--highlight-color);
 }
 
-th, td {
+th,
+td {
   text-align: center;
 }
 tbody tr td ul .list-group-item {
@@ -212,15 +214,15 @@ footer a {
 /* media queries */
 @media (max-width: 800px) {
   .list-group-item a {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
   table {
-    font-size: .75em;
+    font-size: 0.75em;
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1088px) {
   .dark {
     --bg-url: url(../assets/bg-desktop.jpg);
   }
@@ -228,7 +230,6 @@ footer a {
   .light {
     --bg-url: url(../assets/bg-desktop-light.jpg);
   }
- 
 }
 
 /* animation */
